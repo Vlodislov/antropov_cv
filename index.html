@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Антропов Влад — Junior Python Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div class="lang-switcher">
+  <div class="lang-btn">
+    <span class="lang-opt active" data-lang="ru" onclick="setLang('ru')">RU</span>
+    <span class="lang-opt" data-lang="en" onclick="setLang('en')">EN</span>
+  </div>
+</div>
+
+<div class="page">
+  <aside class="sidebar">
+    <div class="photo-wrap">
+      <div class="photo-circle"><img src="vlad.jpg" alt="Главная фотка"></div>
+    </div>
+    <div class="sidebar-sections-grid">
+    <div class="sidebar-section">
+      <div class="sidebar-title" data-ru="Контакты" data-en="Contacts">Контакты</div>
+      <div class="contact-item">
+        <span class="icon">📞</span>
+        <span>+375 (29) 505-81-98</span>
+      </div>
+      <div class="contact-item">
+        <span class="icon">✉</span>
+        <a href="mailto:vladanter0@gmail.com">vladanter0@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="icon">📍</span>
+        <span data-ru="Гомель, Беларусь" data-en="Gomel, Belarus">Гомель, Беларусь</span>
+      </div>
+      <div class="contact-item">
+        <span class="icon">🦊</span>
+        <a href="https://gitlab.com/VladAntropov" target="_blank">gitlab.com/VladAntropov</a>
+      </div>
+        <div class="contact-item">
+        <span class="icon">🐙</span>
+        <a href="https://github.com/Vlodislov" target="_blank">github.com/Vlodislov</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">in</span>
+        <a href="https://linkedin.com/in/влад-антропов" target="_blank">linkedin.com/in/влад-антропов</a>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title" data-ru="Навыки" data-en="Skills">Навыки</div>
+      <div class="skill-group">
+        <div class="skill-group-title" data-ru="Backend & Architecture & Databases" data-en="Backend & Architecture & Databases">Backend & Architecture & Databases</div>
+        <div class="skill-tags">
+          <span class="tag">Django</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">PostgreSQL(Aggregation & Migrations)</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">SQLAlchemy</span>
+          <span class="tag">Redis(PubSub, Caching, Rate Limiting)</span>
+          <span class="tag">Celery</span>
+          <span class="tag">RabbitMQ</span>
+          <span class="tag">Pika</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title" data-ru="DevOps, Tools & Testing" data-en="DevOps, Tools & Testing">DevOps, Tools & Testing</div>
+        <div class="skill-tags">
+          <span class="tag">Docker</span>
+          <span class="tag">Git(Git Flow)</span>
+          <span class="tag muted">CI/CD</span>
+          <span class="tag">Uvicorn</span>
+          <span class="tag">Nginx</span>
+          <span class="tag">Pytest(Asyncio)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title" data-ru="Integrations & Other" data-en="Integrations & Other">Integrations & Other</div>
+        <div class="skill-tags">
+          <span class="tag muted">.NET (C#)</span>
+          <span class="tag muted">JavaScript</span>
+          <span class="tag muted">Dart</span>
+          <span class="tag muted">Flutter</span>
+          <span class="tag muted">Postman</span>
+          <span class="tag muted">Telegram Bot API</span>
+          <span class="tag muted">Pandas</span>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title" data-ru="Языки" data-en="Languages">Языки</div>
+      <div class="lang-item">
+        <span class="lang-dot"></span>
+        <span data-ru="Английский — B1 (Intermediate)" data-en="English — B1 (Intermediate)">Английский — B1 (Intermediate)</span>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title" data-ru="Сертификаты" data-en="Certificates">Сертификаты</div>
+      <div class="cert-item">
+        <span data-ru="Комплексный курс по разработке веб-приложений на Python (IT-Academ, 2022)" data-en="Comprehensive Python Web Development Course (IT-Academy, 2022)">Комплексный курс по разработке веб-приложений на Python (IT-Academ, 2022)</span>
+      </div>
+    </div>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="header">
+      <div class="header-name" data-ru="Антропов Влад" data-en="Vlad Antropov">Антропов Влад</div>
+      <div class="header-role" data-ru="Junior Python Developer" data-en="Junior Python Developer">Junior Python Developer</div>
+      <div class="exp-company" data-ru="Специализируюсь на области автоматизации бизнеса и проектирования высоконагруженных backend-архитектур. Специализируюсь на создании масштабируемых микросервисных решений и сложных корпоративных систем управления (АСУП)." data-en="I specialize in business automation and high-load backend architecture design. Focused on building scalable microservice solutions and complex enterprise management systems (ERP/MES).">Специализируюсь на области автоматизации бизнеса и проектирования высоконагруженных backend-архитектур. Специализируюсь на создании масштабируемых микросервисных решений и сложных корпоративных систем управления (АСУП).</div>
+    </div>
+    <div class="main-content">
+      <section class="section">
+        <div class="section-title" data-ru="Опыт работы" data-en="Work Experience">Опыт работы</div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title" data-ru="Backend Developer" data-en="Backend Developer">Backend Developer</span>
+            <span class="exp-date" data-ru="Декабрь 2025 — Июнь 2026" data-en="December 2025 — June 2026">Декабрь 2025 — Июнь 2026</span>
+          </div>
+          <div class="exp-company" data-ru='ООО "Администрива"' data-en='OOO "Administriva"'>ООО "Администрива"</div>
+          <ul class="exp-list">
+            <li data-ru="Разработка сложной бизнес-логики. Успешно реализовал миграцию со сквозного группового учета на детализированный учет по моноблокам. Это обеспечило стопроцентную прослеживаемость (traceability) каждой единицы изделия на всех этапах производственного цикла." data-en="Complex business logic development. Successfully migrated from cross-cutting group accounting to detailed per-monoblock tracking, ensuring 100% traceability of each product unit at every stage of the production cycle.">Разработка сложной бизнес-логики. Успешно реализовал миграцию со сквозного группового учета на детализированный учет по моноблокам. Это обеспечило стопроцентную прослеживаемость (traceability) каждой единицы изделия на всех этапах производственного цикла.</li>
+            <li data-ru="Обработка и нормализация данных. Разработал механизмы парсинга геометрических параметров изделий, автоматизировал расчет физических характеристик с учетом вложенности компонентов." data-en="Data processing and normalization. Developed parsers for geometric product parameters and automated calculation of physical characteristics accounting for nested component structures.">Обработка и нормализация данных. Разработал механизмы парсинга геометрических параметров изделий, автоматизировал расчет физических характеристик с учетом вложенности компонентов.</li>
+            <li data-ru="Генерация отчетности. Оптимизировал процесс генерации тяжелых отчетов и обработки XML/Excel-данных, снизив нагрузку на память и исключив утечки при работе с большими массивами производственной информации." data-en="Report generation. Optimized heavy report generation and XML/Excel data processing, reducing memory usage and eliminating leaks when handling large production data sets.">Генерация отчетности. Оптимизировал процесс генерации тяжелых отчетов и обработки XML/Excel-данных, снизив нагрузку на память и исключив утечки при работе с большими массивами производственной информации.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title" data-ru="Инженер-программист" data-en="Software Engineer">Инженер-программист</span>
+            <span class="exp-date" data-ru="Август 2023 — Октябрь 2023" data-en="August 2023 — October 2023">Август 2023 — Октябрь 2023</span>
+          </div>
+          <div class="exp-company" data-ru='ГУО "Средняя школа №49" г. Гомель' data-en='Secondary School No.49, Gomel'>ГУО "Средняя школа №49" г. Гомель</div>
+          <ul class="exp-list">
+            <li data-ru="Техническая поддержка и администрирование: обслуживал компьютерные классы, настраивал локальные сети и Wi-Fi инфраструктуры, устанавливал и обновлял ПО (ОС, офисные пакеты, специализированные учебные программы), обеспечивал кибербезопасность и защиту данных." data-en="Technical support and administration: maintained computer labs, configured local networks and Wi-Fi infrastructure, installed and updated software (OS, office suites, educational programs), ensured cybersecurity and data protection.">Техническая поддержка и администрирование: обслуживал компьютерные классы, настраивал локальные сети и Wi-Fi инфраструктуры, устанавливал и обновлял ПО (ОС, офисные пакеты, специализированные учебные программы), обеспечивал кибербезопасность и защиту данных.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title" data-ru="Проект TECHCHEAP" data-en="TECHCHEAP Project">Проект TECHCHEAP</span>
+            <span class="exp-date" data-ru="Ноябрь 2022 — Январь 2023" data-en="November 2022 — January 2023">Ноябрь 2022 — Январь 2023</span>
+          </div>
+          <div class="exp-company">
+            <a class="exp-company" href="https://gitlab.com/VladAntropov/techcheap" target="_blank">https://gitlab.com/VladAntropov/techcheap</a>
+          </div>
+          <ul class="exp-list">
+            <li data-ru="Практический проект — блог-платформа: реализовал модульную архитектуру backend-части на FastAPI, RESTful API, CRUD операции для статей и комментариев, многоуровневую систему доступа, кеширование через Redis, логирование и обработку ошибок." data-en="Practical project — blog platform: implemented modular backend architecture with FastAPI, RESTful API, CRUD operations for articles and comments, multi-level access control, Redis caching, logging and error handling.">Практический проект — блог-платформа: реализовал модульную архитектуру backend-части на FastAPI, RESTful API, CRUD операции для статей и комментариев, многоуровневую систему доступа, кеширование через Redis, логирование и обработку ошибок.</li>
+            <li data-ru="Ключевые достижения: оптимизировал время ответа API с 800ms до 120ms, реализовал систему тегов с полнотекстовым поиском, настроил автоматическое резервное копирование БД." data-en="Key achievements: optimized API response time from 800ms to 120ms, implemented a tag system with full-text search, configured automated database backups.">Ключевые достижения: оптимизировал время ответа API с 800ms до 120ms, реализовал систему тегов с полнотекстовым поиском, настроил автоматическое резервное копирование БД.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Python Developer (Freelance)</span>
+            <span class="exp-date" data-ru="Апрель 2022 — Октябрь 2022" data-en="April 2022 — October 2022">Апрель 2022 — Октябрь 2022</span>
+          </div>
+          <ul class="exp-list">
+            <li data-ru="Разрабатывал backend-сервисы и RESTful API на FastAPI и Flask." data-en="Developed backend services and RESTful APIs using FastAPI and Flask.">Разрабатывал backend-сервисы и RESTful API на FastAPI и Flask.</li>
+            <li data-ru="Реализовывал аутентификацию (JWT), кеширование (Redis), очереди задач (Celery, RabbitMQ)." data-en="Implemented authentication (JWT), caching (Redis), and task queues (Celery, RabbitMQ).">Реализовывал аутентификацию (JWT), кеширование (Redis), очереди задач (Celery, RabbitMQ).</li>
+            <li data-ru="Настраивал контейнеризацию и деплой (Docker, Nginx)." data-en="Configured containerization and deployment (Docker, Nginx).">Настраивал контейнеризацию и деплой (Docker, Nginx).</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-title" data-ru="Образование" data-en="Education">Образование</div>
+        <div class="edu-item">
+          <div class="edu-year">2025–2029</div>
+          <div class="edu-info">
+            <div class="edu-name" data-ru="Белорусский государственный университет информатики и радиоэлектроники" data-en="Belarusian State University of Informatics and Radioelectronics">Белорусский государственный университет информатики и радиоэлектроники</div>
+            <div class="edu-desc" data-ru="Факультет компьютерных технологий, Программная инженерия, Программное обеспечение информационных технологий" data-en="Faculty of Computer Technologies, Software Engineering, IT Software Development">Факультет компьютерных технологий, Программная инженерия, Программное обеспечение информационных технологий</div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2022</div>
+          <div class="edu-info">
+            <div class="edu-name" data-ru="Курсы IT-Academy" data-en="IT-Academy Courses">Курсы IT-Academy</div>
+            <div class="edu-desc" data-ru="Комплексный курс по разработке веб-приложений на Python" data-en="Comprehensive Python Web Application Development Course">Комплексный курс по разработке веб-приложений на Python</div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2019–2023</div>
+          <div class="edu-info">
+            <div class="edu-name" data-ru='УО "Гомельский государственный аграрно-экономический колледж"' data-en="Gomel State Agrarian-Economic College">УО "Гомельский государственный аграрно-экономический колледж"</div>
+            <div class="edu-desc" data-ru="Техник-программист, разработка программного обеспечения в области информационных технологий" data-en="Computer Technician, Software Development in Information Technologies">Техник-программист, разработка программного обеспечения в области информационных технологий</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
